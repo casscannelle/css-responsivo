@@ -2,6 +2,11 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+
+    @media (max-width: 767px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
     
 
     &__item {
@@ -9,8 +14,8 @@
         border-radius: 1rem;
         display: flex;
         flex-flow: column;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: space-between;
+        align-items: center;
         min-height: 20rem;
         padding: 1rem;
         position: relative;
@@ -40,10 +45,10 @@
         font-size: $font-size-default;
         margin-bottom: 3rem;
         padding: 0 1rem;
+        justify-content: center;
     }
 
     &__button {
-        box-shadow: 0 0 2px 2px rgba(0,150,255,.2);
         background-color: $color-primary;
         border-radius: 1rem;
         color: $font-color-primary;
@@ -52,6 +57,7 @@
         font-size: $font-size-default;
         text-decoration: none;
         align-self: center;
+        text-align: center;
         margin-bottom: 2rem;
         &:hover {
             background-color: rgb(12, 146, 101);

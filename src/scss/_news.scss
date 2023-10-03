@@ -33,19 +33,20 @@
 	background-color: #fff;
 	color: #2b2a2a;
 	outline: none;
+    border-radius: 1rem;
     }
     
     .main-content form button {
-        background-color: $color-primary;
-        color: #fff;
+        background-color: $font-color-primary;
         border-radius: 1rem;
-        border-color: #fff;
+        color: $color-primary;
         font-weight: bold;
         padding: 1rem 2rem;
         font-size: $font-size-default;
         text-decoration: none;
         align-self: center;
-        margin: 2rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
         &:hover {
             background-color: rgb(12, 146, 101);
         }

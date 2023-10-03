@@ -43,12 +43,12 @@
         font-weight: bold;
         padding: 1rem 2rem;
         font-size: $font-size-default;
-        text-decoration: none;
         align-self: center;
         margin-bottom: 2rem;
         margin-top: 2rem;
         &:hover {
             background-color: rgb(12, 146, 101);
+            border-color: #fff;
         }
     }
 }

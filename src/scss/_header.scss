@@ -3,6 +3,29 @@ header .container {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
+    flex-flow: row wrap;
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        flex-direction: row; 
+    }
+
+    .banner {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+        overflow: auto;
+        width: 100%;
+       
+        @media (max-width: 767px) {
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+        }
+    }
 
     .slogan{
 
@@ -11,27 +34,5 @@ header .container {
             text-align: center;
             width: 100%;
         }
-
-    .banner {
-        align-items: center;
-        height: 45rem;
-        display: flex;
-        padding-bottom: 4rem;
-        overflow: hidden;
-        width: 100%;
-       
-        @media (max-width: 767px) {
-
-            img {
-                margin-left: -50%;
-                position: relative;
-                width: 230%;
-                max-width: none;
-                margin-right: -68%;
-                margin-top: 90px;
-            }
-        }
-    }
-    
     }
 }

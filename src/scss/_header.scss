@@ -3,7 +3,6 @@ header .container {
     justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-flow: row wrap;
 
     .logo{
         display: flex;
@@ -18,13 +17,6 @@ header .container {
         overflow: auto;
         width: 100%;
        
-        @media (max-width: 767px) {
-
-            img {
-                position: relative;
-                width: 100%;
-            }
-        }
     }
 
     .slogan{

@@ -21,6 +21,7 @@
 
 @media (min-width: 768px) and (max-width: 1199px) {
     [class*="col-" ] {
+        width: 100%;
         padding-left: 4rem;
         padding-right: 4rem;
     }
